@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="CalcLibrary.Tests/CalcLibrary.Tests.csproj" />
+  <Project Path="CalcLibrary/CalcLibrary.csproj" />
+  <Project Path="CustomerComm.Tests/CustomerComm.Tests.csproj" />
+  <Project Path="CustomerCommLib/CustomerCommLib.csproj" />
+  <Project Path="DirectoryExplorer.Tests/DirectoryExplorer.Tests.csproj" />
+  <Project Path="MagicFilesLib/MagicFilesLib.csproj" />
+  <Project Path="PlayerManager.Tests/PlayerManager.Tests.csproj" />
+  <Project Path="PlayersManagerLib/PlayersManagerLib.csproj" />
+</Solution>
