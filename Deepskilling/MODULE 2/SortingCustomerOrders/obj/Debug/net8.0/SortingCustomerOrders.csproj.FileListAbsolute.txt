@@ -1,0 +1,14 @@
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.AssemblyInfoInputs.cache
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.AssemblyInfo.cs
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.csproj.CoreCompileInputs.cache
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\bin\Debug\net8.0\SortingCustomerOrders.exe
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\bin\Debug\net8.0\SortingCustomerOrders.deps.json
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\bin\Debug\net8.0\SortingCustomerOrders.runtimeconfig.json
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\bin\Debug\net8.0\SortingCustomerOrders.dll
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\bin\Debug\net8.0\SortingCustomerOrders.pdb
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.dll
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\refint\SortingCustomerOrders.dll
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.pdb
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\SortingCustomerOrders.genruntimeconfig.cache
+D:\Cognizant Hands-On\MODULE 2\SortingCustomerOrders\obj\Debug\net8.0\ref\SortingCustomerOrders.dll

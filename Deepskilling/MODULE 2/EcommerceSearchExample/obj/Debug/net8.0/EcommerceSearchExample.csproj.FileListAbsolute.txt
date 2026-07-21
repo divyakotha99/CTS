@@ -1,0 +1,14 @@
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\bin\Debug\net8.0\EcommerceSearchExample.exe
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\bin\Debug\net8.0\EcommerceSearchExample.deps.json
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\bin\Debug\net8.0\EcommerceSearchExample.runtimeconfig.json
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\bin\Debug\net8.0\EcommerceSearchExample.dll
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\bin\Debug\net8.0\EcommerceSearchExample.pdb
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.AssemblyInfoInputs.cache
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.AssemblyInfo.cs
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.csproj.CoreCompileInputs.cache
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.dll
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\refint\EcommerceSearchExample.dll
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.pdb
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\EcommerceSearchExample.genruntimeconfig.cache
+D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample\obj\Debug\net8.0\ref\EcommerceSearchExample.dll

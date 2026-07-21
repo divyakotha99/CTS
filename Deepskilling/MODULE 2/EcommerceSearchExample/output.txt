@@ -1,0 +1,217 @@
+PS D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample> dotnet build
+Restore complete (0.6s)
+  EcommerceSearchExample net8.0 succeeded (3.4s) → bin\Debug\net8.0\EcommerceSearchExample.dll
+
+Build succeeded in 4.8s
+PS D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample> dotnet run
+=== E-commerce Platform Search Function ===
+
+
+1. BIG O NOTATION EXPLANATION
+================================
+What is Big O Notation?
+  Big O notation is a mathematical notation that describes the limiting behavior
+  of a function when the argument tends towards a particular value or infinity.
+  In computer science, it describes the performance or complexity of an algorithm.
+
+How it helps in analyzing algorithms:
+  - Measures time complexity (how runtime grows with input size)
+  - Measures space complexity (how memory usage grows with input size)
+  - Provides upper bound on growth rate (worst-case scenario)
+  - Allows comparison of different algorithms
+  - Helps predict performance for large input sizes
+
+Common Big O complexities:
+  O(1)    - Constant time (best)
+  O(log n) - Logarithmic time (very good)
+  O(n)    - Linear time (good)
+  O(n log n) - Linearithmic time (fair)
+  O(n^2)  - Quadratic time (poor)
+  O(2^n)  - Exponential time (very poor)
+
+Best, Average, and Worst-case scenarios for search:
+  BEST CASE:
+    - Element found at first position
+    - Time complexity: O(1)
+    - Example: Searching for product at index 0
+
+  AVERAGE CASE:
+    - Element found somewhere in middle
+    - Linear Search: O(n/2) = O(n)
+    - Binary Search: O(log n)
+
+  WORST CASE:
+    - Element not found or at last position
+    - Linear Search: O(n) - must check all elements
+    - Binary Search: O(log n) - must divide until found
+
+
+2. TEST PRODUCTS SETUP
+======================
+Created 10 products:
+  [0] ID: 101, Name: Laptop, Category: Electronics, Price: $999.99
+  [1] ID: 102, Name: Headphones, Category: Electronics, Price: $149.99
+  [2] ID: 103, Name: T-Shirt, Category: Clothing, Price: $29.99
+  [3] ID: 104, Name: Coffee Mug, Category: Kitchen, Price: $12.99
+  [4] ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+  [5] ID: 106, Name: Jeans, Category: Clothing, Price: $59.99
+  [6] ID: 107, Name: Blender, Category: Kitchen, Price: $49.99
+  [7] ID: 108, Name: Watch, Category: Electronics, Price: $249.99
+  [8] ID: 109, Name: Sneakers, Category: Clothing, Price: $89.99
+  [9] ID: 110, Name: Pen Set, Category: Office, Price: $15.99
+
+Products sorted by ID:
+  [0] ID: 101, Name: Laptop, Category: Electronics, Price: $999.99
+  [1] ID: 102, Name: Headphones, Category: Electronics, Price: $149.99
+  [2] ID: 103, Name: T-Shirt, Category: Clothing, Price: $29.99
+  [3] ID: 104, Name: Coffee Mug, Category: Kitchen, Price: $12.99
+  [4] ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+  [5] ID: 106, Name: Jeans, Category: Clothing, Price: $59.99
+  [6] ID: 107, Name: Blender, Category: Kitchen, Price: $49.99
+  [7] ID: 108, Name: Watch, Category: Electronics, Price: $249.99
+  [8] ID: 109, Name: Sneakers, Category: Clothing, Price: $89.99
+  [9] ID: 110, Name: Pen Set, Category: Office, Price: $15.99
+
+Products sorted by Name:
+  [0] ID: 107, Name: Blender, Category: Kitchen, Price: $49.99
+  [1] ID: 104, Name: Coffee Mug, Category: Kitchen, Price: $12.99
+  [2] ID: 102, Name: Headphones, Category: Electronics, Price: $149.99
+  [3] ID: 106, Name: Jeans, Category: Clothing, Price: $59.99
+  [4] ID: 101, Name: Laptop, Category: Electronics, Price: $999.99
+  [5] ID: 110, Name: Pen Set, Category: Office, Price: $15.99
+  [6] ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+  [7] ID: 109, Name: Sneakers, Category: Clothing, Price: $89.99
+  [8] ID: 103, Name: T-Shirt, Category: Clothing, Price: $29.99
+  [9] ID: 108, Name: Watch, Category: Electronics, Price: $249.99
+
+3. LINEAR SEARCH TESTS
+======================
+
+Test A: Search for existing product (ID: 105)
+Found at index 4: ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+
+Test B: Search for existing product (Name: 'Jeans')
+Found at index 5: ID: 106, Name: Jeans, Category: Clothing, Price: $59.99
+
+Test C: Search for product in specific category (Electronics)
+Found at index 0: ID: 101, Name: Laptop, Category: Electronics, Price: $999.99
+
+Test D: Search for non-existing product (ID: 999)
+Product not found (returned -1)
+
+Linear Search Time Complexity: O(n)
+  - Must check each element one by one
+  - In worst case, checks all n elements
+  - Does not require sorted array
+
+4. BINARY SEARCH TESTS
+======================
+
+Test A: Search for existing product (ID: 105)
+Found at index 4: ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+
+Test B: Search for existing product (ID: 101 - first element)
+Found at index 0: ID: 101, Name: Laptop, Category: Electronics, Price: $999.99
+
+Test C: Search for existing product (ID: 110 - last element)
+Found at index 9: ID: 110, Name: Pen Set, Category: Office, Price: $15.99
+
+Test D: Search for non-existing product (ID: 999)
+Product not found (returned -1)
+
+Test E: Search by name (Name: 'Smartphone')
+Found at index 6: ID: 105, Name: Smartphone, Category: Electronics, Price: $799.99
+
+Binary Search Time Complexity: O(log n)
+  - Divides search space by half each iteration
+  - In worst case, divides until space is 1 element
+  - REQUIRES sorted array
+  - Much faster than linear search for large datasets
+
+5. ALGORITHM COMPARISON ANALYSIS
+==================================
+
+TIME COMPLEXITY COMPARISON:
+----------------------------
+| Algorithm   | Best Case | Average Case | Worst Case |
+|-------------|-----------|--------------|------------|
+| Linear Search | O(1)      | O(n)         | O(n)       |
+| Binary Search | O(1)      | O(log n)     | O(log n)   |
+
+
+PRACTICAL PERFORMANCE COMPARISON (for n = 1,000,000):
+-----------------------------------------------------
+Linear Search:
+  - Best case: 1 comparison
+  - Average case: 500,000 comparisons
+  - Worst case: 1,000,000 comparisons
+
+Binary Search:
+  - Best case: 1 comparison
+  - Average case: ~10 comparisons (log2(1,000,000) = 20)
+  - Worst case: ~20 comparisons
+
+
+SPACE COMPLEXITY:
+------------------
+Linear Search: O(1) - no extra space needed
+Binary Search: O(1) - no extra space needed (iterative)
+
+
+REQUIREMENTS:
+--------------
+Linear Search:
+  - Does NOT require sorted array
+  - Works on any data structure (array, list, linked list)
+
+Binary Search:
+  - REQUIRES sorted array
+  - Only works on array-like structures with index access
+
+
+WHICH ALGORITHM IS MORE SUITABLE FOR E-COMMERCE PLATFORM?
+==========================================================
+
+RECOMMENDATION: Use BOTH algorithms based on context
+
+Use LINEAR SEARCH when:
+  1. Small dataset (n < 50)
+     - Sorting overhead outweighs search benefit
+  2. Data is frequently changing (add/delete)
+     - Maintaining sorted order is expensive
+  3. First search on unsorted data
+     - No need to sort if searching only once
+
+Use BINARY SEARCH when:
+  1. Large dataset (n > 1000)
+     - O(log n) is significantly faster than O(n)
+  2. Data is static or rarely changes
+     - Sorting once, searching many times
+  3. Multiple searches on same dataset
+     - Sorting overhead amortized over many searches
+  4. Product catalog (relatively stable)
+     - Products added occasionally, searched frequently
+
+
+BEST PRACTICE FOR E-COMMERCE PLATFORM:
+---------------------------------------
+1. Store products in sorted array (by ID or name)
+2. Use binary search for product lookups
+3. Use linear search for:
+   - Category filtering (unsorted data)
+   - Temporary/uncached data
+   - Very small result sets
+
+4. Consider hybrid approach:
+   - Sort data once at startup
+   - Use binary search for 99% of queries
+   - Use linear search for edge cases
+
+5. For production: Consider even faster options:
+   - Hash tables: O(1) average for exact ID lookup
+   - Database indexes: Optimized B-tree searches
+   - Search engines (Elasticsearch): For complex queries
+
+
+=== Search Function Analysis Complete ===
+PS D:\Cognizant Hands-On\MODULE 2\EcommerceSearchExample> 

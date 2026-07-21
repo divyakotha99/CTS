@@ -1,0 +1,14 @@
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.exe
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.deps.json
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.runtimeconfig.json
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.pdb
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.AssemblyInfoInputs.cache
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.AssemblyInfo.cs
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.csproj.CoreCompileInputs.cache
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\refint\InventoryManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.pdb
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.genruntimeconfig.cache
+D:\Cognizant Hands-On\MODULE 2\InventoryManagementSystem\obj\Debug\net8.0\ref\InventoryManagementSystem.dll

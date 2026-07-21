@@ -1,0 +1,209 @@
+PS D:\Cognizant Hands-On\MODULE 2\Financial Forecasting> dotnet build
+Restore complete (0.3s)
+  FinancialForecastingExample net8.0 succeeded (2.1s) → bin\Debug\net8.0\FinancialForecastingExample.dll
+
+Build succeeded in 2.8s
+PS D:\Cognizant Hands-On\MODULE 2\Financial Forecasting> dotnet run
+=== Financial Forecasting Tool ===
+
+
+1. RECURSION CONCEPT EXPLANATION
+==================================
+What is Recursion?
+  Recursion is a programming technique where a method calls itself to solve a problem.
+  It breaks down complex problems into smaller, simpler instances of the same problem.
+
+Key Components of Recursion:
+  1. Base Case: The condition when recursion stops (prevents infinite loops)
+  2. Recursive Case: When the method calls itself with modified parameters
+  3. Recursive Call: The actual call to the same method
+
+How Recursion Simplifies Problems:
+  - Breaks complex problems into simpler sub-problems
+  - Natural fit for problems with recursive structure
+  - Cleaner, more readable code for certain algorithms
+  - Eliminates need for explicit loops in some cases
+
+Common Use Cases:
+  - Mathematical calculations (factorials, Fibonacci)
+  - Tree and graph traversals
+  - Search algorithms (binary search)
+  - Financial calculations (compound interest)
+  - File system navigation
+
+Recursion in Financial Forecasting:
+  - Each year's value depends on previous year's value
+  - Natural recursive structure: F(n) = F(n-1) * (1 + growthRate)
+  - Base case: F(0) = initialValue
+
+
+2. BASIC FINANCIAL FORECASTING TESTS
+====================================
+
+Test 1: Simple Compound Growth (Fixed Rate)
+Initial Value: $10000
+Growth Rate: 5%
+Periods: 5 years
+Recursive Result: $12762.82
+Formula Result: $12762.82
+Difference: $0.00
+
+=== Financial Forecast Breakdown ===
+Initial Value: $10000
+Growth Rate: 5%
+Forecast Period: 5 years
+----------------------------------------
+Year 1: $10500.00
+Year 2: $11025.00
+Year 3: $11576.25
+Year 4: $12155.06
+Year 5: $12762.82
+Year 6: $13400.96
+----------------------------------------
+Final Value: $12762.82
+Total Growth: $2762.82
+Percentage Growth: 27.63%
+========================================
+
+
+Test 2: Higher Growth Rate
+Initial Value: $50000
+Growth Rate: 10%
+Periods: 10 years
+Recursive Result: $129687.12
+Formula Result: $129687.12
+
+Test 3: Long-term Forecast (20 years)
+Initial Value: $100000
+Growth Rate: 7.000000000000001%
+Periods: 20 years
+Recursive Result: $386968.45
+Formula Result: $386968.45
+
+3. VARYING GROWTH RATES TESTS
+==============================
+
+Test 1: Variable Growth Rates
+Initial Value: $10000
+Growth Rates: 0.03, 0.05, 0.07, 0.04, 0.06
+Recursive Result: $12757.03
+
+Manual Calculation:
+  Year 1: $10300.00 (Rate: 3%)
+  Year 2: $10815.00 (Rate: 5%)
+  Year 3: $11572.05 (Rate: 7.000000000000001%)
+  Year 4: $12034.93 (Rate: 4%)
+  Year 5: $12757.03 (Rate: 6%)
+Manual Result: $12757.03
+
+Test 2: Forecast History Generation
+Initial Value: $5000
+Growth Rate: 8%
+
+Year-by-Year Forecast:
+  Year 0: $5000.00
+  Year 1: $5400.00
+  Year 2: $5400.00
+  Year 3: $5400.00
+  Year 4: $5400.00
+  Year 5: $5400.00
+  Year 6: $5400.00
+  Year 7: $5400.00
+
+4. OPTIMIZED APPROACHES TESTS
+==============================
+
+Test 1: Memoized vs Basic Recursive
+Initial Value: $1000
+Growth Rate: 5%
+Periods: 15
+Basic Recursive: $2078.93
+Memoized: $2078.93
+Formula: $2078.93
+
+Test 2: Large Dataset with Variable Rates
+Initial Value: $50000
+Periods: 20 years
+Result: $220904.29
+
+5. TIME COMPLEXITY ANALYSIS
+============================
+
+Basic Recursive Algorithm:
+  Time Complexity: O(n)
+  - Makes n recursive calls
+  - Each call does constant work (multiplication)
+  - Total: n * O(1) = O(n)
+
+  Space Complexity: O(n)
+  - Call stack depth: n levels
+  - Each call stores parameters and return value
+
+
+Memoized Recursive Algorithm:
+  Time Complexity: O(n)
+  - Still makes n calls, but avoids recomputation
+  - Dictionary lookup: O(1) average
+
+  Space Complexity: O(n)
+  - Call stack: O(n)
+  - Memoization dictionary: O(n)
+  - Total: O(n) + O(n) = O(n)
+
+
+Direct Formula (Non-recursive):
+  Time Complexity: O(1)
+  - Single mathematical operation (pow)
+  - No recursive calls
+
+  Space Complexity: O(1)
+  - No call stack
+  - Fixed number of variables
+
+
+OPTIMIZATION TECHNIQUES:
+========================
+
+1. memoization (Already Implemented):
+   - Store results of previous calculations
+   - Avoid recomputing same values
+   - Reduces time when same subproblems occur
+
+2. Convert to Iterative Approach:
+   - Replace recursion with loops
+   - Eliminates call stack overhead
+   - Better space complexity: O(1)
+
+3. Use Direct Formula:
+   - F(n) = F(0) * (1 + r)^n
+   - Most efficient: O(1) time and space
+   - Best for compound interest calculations
+
+4. Tail Recursion Optimization:
+   - Rewrite recursion to be tail-recursive
+   - Some compilers optimize tail recursion
+   - Reduces stack space usage
+
+
+WHICH APPROACH TO USE?
+======================
+
+For Financial Forecasting:
+  RECOMMENDATION: Use Direct Formula
+  - O(1) time and space complexity
+  - Most accurate (no accumulation of errors)
+  - Simple and efficient
+
+When to Use Recursive:
+  - Variable growth rates (each year different)
+  - Educational purposes (understanding recursion)
+  - Complex dependency on previous values
+
+Performance Comparison (n = 1000):
+  Basic Recursive: ~1000 stack operations
+  Memoized: ~1000 dictionary operations
+  Formula: 1 mathematical operation
+
+
+=== Financial Forecasting Complete ===
+PS D:\Cognizant Hands-On\MODULE 2\Financial Forecasting> 

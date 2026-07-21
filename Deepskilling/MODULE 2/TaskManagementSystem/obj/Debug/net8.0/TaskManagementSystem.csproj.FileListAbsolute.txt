@@ -1,0 +1,14 @@
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.AssemblyInfoInputs.cache
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.AssemblyInfo.cs
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.csproj.CoreCompileInputs.cache
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\bin\Debug\net8.0\TaskManagementSystem.exe
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\bin\Debug\net8.0\TaskManagementSystem.deps.json
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\bin\Debug\net8.0\TaskManagementSystem.runtimeconfig.json
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\bin\Debug\net8.0\TaskManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\bin\Debug\net8.0\TaskManagementSystem.pdb
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\refint\TaskManagementSystem.dll
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.pdb
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\TaskManagementSystem.genruntimeconfig.cache
+D:\Cognizant Hands-On\MODULE 2\TaskManagementSystem\obj\Debug\net8.0\ref\TaskManagementSystem.dll
